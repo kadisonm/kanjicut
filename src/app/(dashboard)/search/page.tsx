@@ -9,13 +9,19 @@ import Keyword from "@/components/keyword";
 import { Key } from "lucide-react";
 import { getKeywords } from "@/utils/kanji";
 
+// This function has to be seperate due to the useSearchParams() being client side only
 function Search() {
+  // Get the search query (from URL)
   const searchParams = useSearchParams();
   const qParam = searchParams?.get("q") ?? "";
+
+  // Decode the query to a kanji
   const query = qParam ? decodeURIComponent(qParam) : "";
 
+  // Retrieve the keywords
   const keywords = getKeywords(query);
 
+  // HTML
   return (
     <>
       <p>Search results for ‘{query}’</p>
@@ -31,7 +37,7 @@ function Search() {
           <Keyword
             keyword={keywords && keywords["jpdbKeyword"]}
             source="jpdb"
-            url="https://jpdb.io/kanji/%E8%A9%B1#a"
+            url={`https://jpdb.io/kanji/${query}`}
           />
           <hr />
           <Keyword
@@ -46,6 +52,8 @@ function Search() {
   );
 }
 
+// Search component must be suspended to ensure it is only EVER run on the client.
+// Otherwise it throws an error when attempting to build the site.
 export default function SearchPage() {
   return (
     <Suspense>
