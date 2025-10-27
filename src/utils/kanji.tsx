@@ -37,5 +37,6 @@ export function getSVG(kanji: string) {
     src={pathToSvg}
     width={109}
     height={109}
+    alt="kanji"
   />);
 }
