@@ -1,7 +1,7 @@
 interface BoxProps {
-    icon?: ReactNode; 
+    icon?: any; 
     title?: string;
-    children: ReactNode;
+    children: any;
 }
 
 export default function Box({ icon, title, children }: BoxProps) {
