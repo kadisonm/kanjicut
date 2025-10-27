@@ -80,7 +80,7 @@ a, .interactive-text {
   margin: 0;
   font-weight: 400;
   color: $interactive-normal;
-  text-wrap: wrap;
+  text-wrap: None;
   cursor: pointer;
 
   &:hover {
