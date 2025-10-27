@@ -11,5 +11,11 @@ export default function Home() {
       <br />
       <p>Try it — enter a kanji and watch it get cut, stroke by stroke. ✂️</p>  
     </Box>
+
+    <Box>
+      <p>Here are some kanji that you can search as a test:</p>
+      <br />
+      <h2>感　行　時　歩</h2>
+    </Box>
   </>);
 }
