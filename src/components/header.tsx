@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import Image from 'next/image';
 
-import kanji from "../public/logo.svg"
 import SearchBar from './searchbar';
 
 export default function Header() {

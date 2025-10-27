@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
-import SearchBar from '@/components/searchbar';
 
 import SpecialBox from '@/components/special-box';
 import Box from '@/components/box';
