@@ -1,5 +1,5 @@
 interface BoxProps {
-    icon?: ReactElement<any, any>; 
+    icon?: ReactNode; 
     title?: string;
     children: ReactNode;
 }
