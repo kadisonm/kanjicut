@@ -1,14 +1,17 @@
-$phone-width: 480px;
+$phone-width: 600px;
 
-$color-primary: #fc512e;
+$color-primary: #EE6B4D;
 
-$background-primary: #ffffff;
-$background-secondary: #000000;
-$background-warning: #fcc52e;
+$background-primary: #293241;
+$background-secondary: #202733;
+$border-highlight: #455470;
 
-$interactive-normal: #fc512e;
-$interactive-hover: #c92302;
+$interactive-normal: #4E74A4;
+$interactive-hover: #98C0D9;
 
-$text-normal: #000000;
-$text-muted: #474747;
-$text-inverted: #ffffff;
+$text-normal: #98C0D9;
+$text-muted: #455470;
+$text-white: #ffffff;
+$text-inverted: #000000;
+
+$panel-gap-size: 2em;

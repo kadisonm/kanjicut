@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basepath: "/kanji-splitter",
+    basepath: "/kanjicut",
     output: "export",
     reactStrictMode: true,
 };

@@ -1,5 +1,5 @@
 {
-  "name": "kanji-splitter",
+  "name": "kanjicut",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "cookies-next": "^4.1.1",
     "firebase": "^10.12.0",
+    "lucide-react": "^0.548.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"

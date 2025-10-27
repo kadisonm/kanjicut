@@ -1,23 +1,16 @@
 "use client"
 
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Header() {
     return (
         <div className="header">
-            <div className="left">
-                <span>
-                    <div className="subtitle">By Kadison McLellan</div>
-                    <div className="title">Cut Kanji</div>
-                </span>
-                
-                <Link className="header-button" href="/">Home</Link>
-                <Link className="header-button" href="/search">Kanji Search</Link>
-            </div>
+            <Link href="/">
+                <Image src="/logo.svg" alt="Logo" width={300} height={100}/>
+            </Link>
 
-            <div className="right">
-                <p>Search</p>
-            </div>
+            <Link href="/search" className='interactive-text'>Search Kanji or Keyword</Link>
         </div>
     );
 }

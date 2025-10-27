@@ -1,9 +1,9 @@
 "use client"
 
+import Box from "@/components/box";
+
 export default function Home() {
-  return (
-    <div>
-      Welcome to Cut Kanji. 
-    </div>
-  );
+  return (<>
+    <p>Welcome to KanjiCut.</p>
+  </>);
 }
