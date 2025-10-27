@@ -14,29 +14,7 @@ export default function SearchPage() {
   const qParam = searchParams?.get('q') ?? '';
   const query = qParam ? decodeURIComponent(qParam) : '';
 
-  const [loading, setLoading] = useState(false);
-  const [results, setResults] = useState(null);
-  const [error, setError] = useState(null);
-
   const keywords = getKeywords(query);
-
-  useEffect(() => {
-    if (!query) return;
-
-    setLoading(true);
-    setError(null);
-    setResults(null);
-
-    // Replace with your real API endpoint
-    fetch(`/api/search?q=${encodeURIComponent(query)}`)
-      .then((res) => {
-        if (!res.ok) throw new Error('Search request failed');
-        return res.json();
-      })
-      .then((data) => setResults(data.items ?? data))
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false));
-  }, [query]);
 
   return (<>
       <p>Search results for ‘{query}’</p>
