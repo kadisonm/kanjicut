@@ -6,6 +6,8 @@ html {
   padding: 0;
 
   scrollbar-gutter: stable;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -68,6 +70,8 @@ p {
   margin: 0;
   color: $text-normal;
 
+  text-wrap: wrap;
+
   width: auto;
 }
 
@@ -76,7 +80,7 @@ a, .interactive-text {
   margin: 0;
   font-weight: 400;
   color: $interactive-normal;
-  text-wrap: nowrap;
+  text-wrap: wrap;
   cursor: pointer;
 
   &:hover {
