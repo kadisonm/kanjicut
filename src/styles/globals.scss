@@ -254,6 +254,10 @@ hr {
   justify-content: space-between;
   gap: $panel-gap-size;
   
+  @media screen and (max-width: $phone-width) {
+    flex-direction: column;
+  }
+
   width: 100%;
 }
 
