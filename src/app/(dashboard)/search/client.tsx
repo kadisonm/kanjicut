@@ -1,6 +1,5 @@
-'use client'
+"use client";
 
-import { Suspense } from 'react'
 import { useSearchParams } from "next/navigation";
 
 import SpecialBox from "@/components/special-box";
@@ -9,7 +8,7 @@ import Keyword from "@/components/keyword";
 import { Key } from "lucide-react";
 import { getKeywords } from "@/utils/kanji";
 
-function Search() {
+export default function SearchClient() {
   const searchParams = useSearchParams();
   const qParam = searchParams?.get("q") ?? "";
   const query = qParam ? decodeURIComponent(qParam) : "";
@@ -43,13 +42,5 @@ function Search() {
         </Box>
       </div>
     </>
-  );
-}
-
-export default function SearchPage() {
-  return (
-    <Suspense>
-      <Search />
-    </Suspense>
   );
 }
