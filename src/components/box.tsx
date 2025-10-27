@@ -1,7 +1,5 @@
-import { LucideIcon } from "lucide-react";
-
 interface BoxProps {
-    icon?: LucideIcon; 
+    icon?: ReactElement<any, any>; 
     title?: string;
     children: ReactNode;
 }
